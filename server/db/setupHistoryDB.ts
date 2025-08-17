@@ -9,20 +9,20 @@ const db = new sqlite3.Database(dbPath, (err) => {
 db.serialize(() => {
   db.run(
     `
-    CREATE TABLE IF NOT EXISTS matches (
+    CREATE TABLE IF NOT EXISTS league_season_averages (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       league TEXT,
       season TEXT,
-      home_team TEXT,
-      away_team TEXT,
-      result TEXT
+      home_team_win INT,
+      draw INT,
+      away_team_win INT
     )
   `,
     (err) => {
       console.log(
         err
-          ? `Error creating matches table: ${err}`
-          : 'Matches table created or exists'
+          ? `Error creating league_season_averages table: ${err}`
+          : 'League Season Averages table created or exists'
       )
     }
   )
