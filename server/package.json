@@ -14,10 +14,10 @@
   "dependencies": {
     "@fastify/cors": "^11.1.0",
     "@fastify/jwt": "^10.0.0",
-    "@journeyapps/sqlcipher": "^5.3.1",
     "fastify": "^5.5.0",
     "form-data": "^4.0.4",
     "simple-statistics": "^7.8.8",
+    "sqlite3": "^5.1.7",
     "tar": "^6.2.1",
     "tough-cookie": "^4.1.3"
   }
