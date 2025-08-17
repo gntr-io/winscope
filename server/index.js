@@ -1,5 +1,10 @@
 const fastify = require('fastify')({})
-
+fastify.register(require('@fastify/cors'), {
+  origin: 'http://localhost:5173',
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type'],
+  credentials: true,
+})
 fastify.register(require('./routes/winscopePlugin'), { prefix: '/winscope' })
 
 fastify.listen({ port: 5000 }, (err) => {
