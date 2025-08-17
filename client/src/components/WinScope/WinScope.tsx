@@ -20,7 +20,7 @@ export default function FootballAgentForm() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight select-none">
             Winscope
             <span className="block text-blue-400 text-3xl md:text-4xl font-light mt-1">
-              Football Agent
+              AI Agent
             </span>
           </h1>
           <p className="text-slate-400 text-sm mt-4">
